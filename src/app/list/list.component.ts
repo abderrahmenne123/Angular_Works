@@ -13,7 +13,7 @@ export class ListComponent implements OnInit {
 
 
   selectedPersonne = new Personne();
-  canShowDetail: boolean;
+  canShowDetail: boolean | undefined;
 
 
   constructor(public hiringService: HiringService) {

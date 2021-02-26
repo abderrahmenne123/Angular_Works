@@ -12,6 +12,7 @@ import { TodoComponent } from './todo/todo.component';
 import { MiniwordComponent } from './miniword/miniword.component';
 import { RouterSimulatorComponent } from './router-simulator/router-simulator.component';
 import {FormsModule} from '@angular/forms';
+import { ColorComponent } from './color/color.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import {FormsModule} from '@angular/forms';
     HeaderComponent,
     TodoComponent,
     MiniwordComponent,
-    RouterSimulatorComponent
+    RouterSimulatorComponent,
+    ColorComponent
   ],
     imports: [
         BrowserModule,
