@@ -10,6 +10,8 @@ import { HiredCvComponent } from './hired-cv/hired-cv.component';
 import { HeaderComponent } from './header/header.component';
 import { TodoComponent } from './todo/todo.component';
 import { MiniwordComponent } from './miniword/miniword.component';
+import { RouterSimulatorComponent } from './router-simulator/router-simulator.component';
+import {FormsModule} from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -20,12 +22,14 @@ import { MiniwordComponent } from './miniword/miniword.component';
     HiredCvComponent,
     HeaderComponent,
     TodoComponent,
-    MiniwordComponent
+    MiniwordComponent,
+    RouterSimulatorComponent
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule
-  ],
+    imports: [
+        BrowserModule,
+        AppRoutingModule,
+        FormsModule
+    ],
   providers: [],
   bootstrap: [AppComponent]
 })
