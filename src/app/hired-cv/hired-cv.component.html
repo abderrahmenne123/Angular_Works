@@ -1,0 +1,13 @@
+<ng-container *ngIf="hiredCVs.length>0">
+
+  <h2>List of hired CVs</h2>
+
+  <ul *ngFor="let cv of hiredCVs">
+    <li>{{cv.cin}}</li>
+    <li>{{cv.firstname}} {{cv.name}}</li>
+    <hr>
+  </ul>
+
+</ng-container>
+
+

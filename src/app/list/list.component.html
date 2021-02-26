@@ -1,0 +1,16 @@
+<ul *ngFor="let personne of personnes">
+  <li> {{personne.firstname}} {{personne.name}}</li>
+  <button (click)="showDetails(personne)">Show Detail</button>
+
+  <button (click)="hire(personne)" *ngIf="!hiringService.isCvHired(personne)">Hire</button>
+  <button (click)="reject(personne)" *ngIf="hiringService.isCvHired(personne)">Reject</button>
+
+
+</ul>
+
+<ng-container *ngIf="canShowDetail">
+  <app-detail [selectedPersonne]="selectedPersonne"></app-detail>
+</ng-container>
+
+
+<app-hired-cv></app-hired-cv>
