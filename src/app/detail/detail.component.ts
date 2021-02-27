@@ -1,5 +1,6 @@
 import {Component, Input, OnInit} from '@angular/core';
 import {Personne} from '../../model/Personne';
+import {Router} from '@angular/router';
 
 @Component({
   selector: 'app-detail',
@@ -10,10 +11,16 @@ export class DetailComponent implements OnInit {
 
   @Input() selectedPersonne = new Personne();
 
-  constructor() {
+  constructor(
+    private router: Router
+  ) {
   }
 
   ngOnInit(): void {
   }
 
+  getTOPerson() {
+    const LINK = ['cv', this.selectedPersonne.id];
+    this.router.navigate(LINK);
+  }
 }

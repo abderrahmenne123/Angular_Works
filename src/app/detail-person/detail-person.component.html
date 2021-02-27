@@ -1,0 +1,44 @@
+<div class="row">
+  <div class="col-md-6 col-sm-3">
+    <div class="input-group input-group-sm mb-3">
+
+      <div class="input-group-prepend">
+
+        <span class="input-group-text" >Name&FirstName</span>
+      </div>
+
+      <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm" value="{{personne?.name}} {{personne?.firstname}}" disabled >
+
+    </div>
+    <div class="input-group input-group-sm mb-3">
+
+      <div class="input-group-prepend">
+
+        <span class="input-group-text" >Age</span>
+      </div>
+
+      <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm" value="{{personne?.age}}" disabled >
+
+    </div>
+
+    <div class="input-group input-group-sm mb-3">
+      <div class="input-group-prepend">
+        <span class="input-group-text" id="inputGroup-sizing-sm">Job</span>
+      </div>
+      <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm"value="{{personne?.job}}"  disabled>
+    </div>
+    <div class="input-group input-group-sm mb-3">
+      <div class="input-group-prepend">
+        <span class="input-group-text" >CIN</span>
+      </div>
+      <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm" value="{{personne?.cin}}" disabled>
+    </div>
+    <div class="col text-center">
+    <button
+
+      (click)="deletePerson()"
+      type="button" class="btn btn-danger" >DELETE</button>
+    </div>
+  </div>
+
+</div>
