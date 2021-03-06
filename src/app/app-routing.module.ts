@@ -11,6 +11,7 @@ import {NF404Component} from './nf404/nf404.component';
 import {DetailComponent} from './detail/detail.component';
 import {DetailPersonComponent} from './detail-person/detail-person.component';
 import {LoginComponent} from './login/login.component';
+import {AddComponent} from './cv/add/add.component';
 
 const routes: Routes = [
   {
@@ -18,7 +19,7 @@ const routes: Routes = [
   children: [
     {path: '', component: CvComponent},
     {path: 'add',
-    component: AddPersonComponent
+    component: AddComponent
     },
     {path: ':id',
       component: DetailPersonComponent

@@ -20,6 +20,7 @@ import { NF404Component } from './nf404/nf404.component';
 import { DetailPersonComponent } from './detail-person/detail-person.component';
 import { FormsExampleComponent } from './forms-example/forms-example.component';
 import { LoginComponent } from './login/login.component';
+import { AddComponent } from './cv/add/add.component';
 
 @NgModule({
   declarations: [
@@ -39,7 +40,8 @@ import { LoginComponent } from './login/login.component';
     NF404Component,
     DetailPersonComponent,
     FormsExampleComponent,
-    LoginComponent
+    LoginComponent,
+    AddComponent
   ],
     imports: [
         BrowserModule,

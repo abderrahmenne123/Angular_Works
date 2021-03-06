@@ -1,0 +1,47 @@
+<form #personneForm="ngForm">
+
+
+  Name :
+  <input
+    ngModel
+    name="name"
+    required
+    type="text"  class="form-control">
+  FirstName :
+  <input
+    ngModel
+    name="firstname"
+    required
+    type="text"  class="form-control">
+  Job :
+  <input
+    ngModel
+    name="job"
+    required
+    type="text"  class="form-control">
+  Path :
+  <input
+    ngModel
+    name="path"
+    required
+    type="text"  class="form-control">
+  Age :
+  <input
+    ngModel
+    name="age"
+    required
+    pattern="[0-1]?\d{1,2}"
+    type="number"  class="form-control">
+  Cin :
+  <input
+    ngModel
+    name="cin"
+    required
+    type="number"  class="form-control">
+  <button
+  [disabled]="personneForm.invalid"
+    (click)="addPersonne(personneForm.value)"
+    class="btn btn-primary">
+   ADD Person
+  </button>
+</form>
