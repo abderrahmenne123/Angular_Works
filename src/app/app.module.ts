@@ -18,6 +18,8 @@ import { FrontComponent } from './front/front.component';
 import { BackComponent } from './back/back.component';
 import { NF404Component } from './nf404/nf404.component';
 import { DetailPersonComponent } from './detail-person/detail-person.component';
+import { FormsExampleComponent } from './forms-example/forms-example.component';
+import { LoginComponent } from './login/login.component';
 
 @NgModule({
   declarations: [
@@ -35,7 +37,9 @@ import { DetailPersonComponent } from './detail-person/detail-person.component';
     FrontComponent,
     BackComponent,
     NF404Component,
-    DetailPersonComponent
+    DetailPersonComponent,
+    FormsExampleComponent,
+    LoginComponent
   ],
     imports: [
         BrowserModule,

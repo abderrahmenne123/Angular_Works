@@ -10,6 +10,7 @@ import {BackComponent} from './back/back.component';
 import {NF404Component} from './nf404/nf404.component';
 import {DetailComponent} from './detail/detail.component';
 import {DetailPersonComponent} from './detail-person/detail-person.component';
+import {LoginComponent} from './login/login.component';
 
 const routes: Routes = [
   {
@@ -28,7 +29,10 @@ const routes: Routes = [
     path: 'todo',
     component: TodoComponent
   },
-
+  {
+    path: 'login',
+    component: LoginComponent
+  },
 
   {
     path: 'front',
