@@ -21,6 +21,7 @@ import { DetailPersonComponent } from './detail-person/detail-person.component';
 import { FormsExampleComponent } from './forms-example/forms-example.component';
 import { LoginComponent } from './login/login.component';
 import { AddComponent } from './cv/add/add.component';
+import { SliderObservableComponent } from './asyncProg/slider-observable/slider-observable.component';
 
 @NgModule({
   declarations: [
@@ -41,7 +42,8 @@ import { AddComponent } from './cv/add/add.component';
     DetailPersonComponent,
     FormsExampleComponent,
     LoginComponent,
-    AddComponent
+    AddComponent,
+    SliderObservableComponent
   ],
     imports: [
         BrowserModule,
